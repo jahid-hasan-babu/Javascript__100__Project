@@ -31,9 +31,24 @@ const showAlert = (state, borderColor, color, message) => {
         alertBox.classList.remove("show");
         alertBox.classList.add("hide");
     },5000)
-
+    startProgressBar()
     closeBtn.addEventListener("click", ()=>{
         alertBox.classList.remove("show");
         alertBox.classList.add("hide");
     })
+}
+
+
+const startProgressBar = () => {
+    let width = 0;
+    const timeInterval = setInterval(fill, 50)
+
+    function fill (){
+        if(width >= 100){
+            clearInterval(timeInterval)
+        }else{
+            width++;
+            progress.style.width = width + "%"
+        }
+    }
 }
