@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home-page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar container">
+        <div>
+          <img src="img/restaurant.png" alt="" />
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="fas fa-user"></i> About Us</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+          <li>
+            <a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home">
+      <img src="img/banner.jpg" alt="banner" class="banner-img" />
+      <div>
+        <h1 class="item_h1">Food Items</h1>
+        <div class="menu-container">
+          <div class="menu-item">
+            <img src="img/food1.jpeg" alt="Dish 1" />
+            <div class="menu-details">
+              <h3>Spaghetti Carbonara</h3>
+              <p>
+                A classic Italian pasta dish made with eggs, cheese, pancetta,
+                and pepper. Served with a side of garlic bread.
+              </p>
+              <span class="price">$12.99</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="img/food2.jpeg" alt="Dish 2" />
+            <div class="menu-details">
+              <h3>Margherita Pizza</h3>
+              <p>
+                Freshly baked pizza with tomato sauce, mozzarella cheese, and
+                fresh basil. A simple yet delicious option.
+              </p>
+              <span class="price">$10.99</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="img/food-3.jpeg" alt="Dish 3" />
+            <div class="menu-details">
+              <h3>Caesar Salad</h3>
+              <p>
+                Crisp romaine lettuce with Caesar dressing, croutons, and
+                Parmesan cheese. A refreshing and healthy choice.
+              </p>
+              <span class="price">$8.99</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="img/food-4.jpeg" alt="Dish 4" />
+            <div class="menu-details">
+              <h3>Chicken Alfredo</h3>
+              <p>
+                Grilled chicken served over fettuccine pasta with a creamy
+                Alfredo sauce. Topped with fresh parsley.
+              </p>
+              <span class="price">$14.99</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="feedback">
+        <h2>Customer Feedback</h2>
+        <div class="feedback-container">
+          <!-- Feedback items -->
+          <div class="feedback-item">
+            <img src="img/man1.jpg" alt="John Doe" class="feedback-img" />
+            <h3>John Doe</h3>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <p>
+              "The food was absolutely delicious and the service was
+              exceptional. Will definitely be coming back!"
+            </p>
+          </div>
+          <div class="feedback-item">
+            <img src="img/man2.jpg" alt="Jane Smith" class="feedback-img" />
+            <h3>Jane Smith</h3>
+            <p class="rating">⭐⭐⭐⭐</p>
+            <p>
+              "Great atmosphere and tasty food. The only downside was the wait
+              time was a bit long."
+            </p>
+          </div>
+          <div class="feedback-item">
+            <img src="img/man3.jpg" alt="Emily Johnson" class="feedback-img" />
+            <h3>Emily Johnson</h3>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <p>
+              "I loved the Spaghetti Carbonara! Everything was perfect, from the
+              food to the ambiance."
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h2>Image Gallery</h2>
+        <div class="gallery-container">
+          <!-- Gallery Images -->
+          <div class="gallery-item">
+            <img src="img/gallery-1.jpeg" alt="Photo 1" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="img/gallery-2.jpeg" alt="Photo 2" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="img/gallery-3.jpeg" alt="Photo 3" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="img/gallery-5.jpeg" alt="Photo 5" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="img/gallery-6.jpeg" alt="Photo 6" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="img/gallery-3.jpeg" alt="Photo 3" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="img/gallery-5.jpeg" alt="Photo 5" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="img/gallery-6.jpeg" alt="Photo 6" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="img/gallery-1.jpeg" alt="Photo 1" class="gallery-img" />
+          </div>
+          <div class="gallery-item">
+            <img src="img/gallery-2.jpeg" alt="Photo 2" class="gallery-img" />
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>
+          &copy; <span id="current-year"></span> Jahid Hasan Babu. All rights
+          reserved.
+        </p>
+        <p id="current-time"></p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
